@@ -1,0 +1,38 @@
+:host {
+  --color-primary: #3a3a3c;
+  --color-secondary: #6c757d;
+  --color-tertiary: #e9ecef;
+  --color-quaternary: #f8f9fa;
+  --color-accent: #1d5592;
+}
+
+.nav-container {
+  background-color: var(--color-primary);
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-tertiary);
+  padding: 10px 20px;
+  border: 2px solid var(--color-accent);
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}

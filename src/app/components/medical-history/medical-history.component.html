@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="search-section">
+    <h3>Buscar Historias Médicas</h3>
+    <input type="text" [(ngModel)]="identificationNumber" placeholder="Cédula" />
+    <button (click)="searchMedicalHistories()">Buscar</button>
+  </div>
+  <div class="results-section">
+    <h3>Historias Médicas</h3>
+    <ul>
+      @for (history of medicalHistories; track history) {
+        <li>{{ history.diagnosis }} - {{ history.registrationDate | date }}</li>
+      }
+    </ul>
+  </div>
+</div>

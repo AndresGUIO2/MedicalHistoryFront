@@ -1,0 +1,12 @@
+<div class="container">
+  <h3>Añadir Historia Médica</h3>
+  <form (ngSubmit)="addMedicalHistory()">
+    <input type="text" [(ngModel)]="newMedicalHistory.patientId" placeholder="Cédula" name="patientId" required />
+    <!-- <input type="text" [(ngModel)]="newMedicalHistory.doctorId" placeholder="Doctor ID" name="doctorId" required /> -->
+    <!-- <input type="date" [(ngModel)]="newMedicalHistory.registrationDate" placeholder="Registration Date" name="registrationDate" required /> -->
+    <input type="text" [(ngModel)]="newMedicalHistory.diagnosis" placeholder="Diagnóstico" name="diagnosis" required />
+    <input type="text" [(ngModel)]="newMedicalHistory.treatment" placeholder="Tratamiento" name="treatment" required />
+    <textarea [(ngModel)]="newMedicalHistory.additionalNotes" placeholder="Notas adicionales" name="additionalNotes"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
